@@ -8,7 +8,7 @@
 #     branches: [ main ]
       - uses: actions/upload-artifact@master
         with:
-          name: webpack artifacts
+    needs: build
           path: public/
 #     branches: [ main ]
 
