@@ -6,7 +6,10 @@
 # on:
 #   push:
 #     branches: [ main ]
-#   pull_request:
+      - uses: actions/upload-artifact@master
+        with:
+          name: webpack artifacts
+          path: public/
 #     branches: [ main ]
 
 # jobs:
@@ -66,4 +69,3 @@ jobs:
         npm test
       env:
         CI: true
-
